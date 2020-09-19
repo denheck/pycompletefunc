@@ -1,4 +1,4 @@
-function! pycompletefunc#CompleteFunc
+function! pycompletefunc#CompleteFunc(findstart, base)
   if a:findstart
     " locate the start of the word
     let line = getline('.')
@@ -17,4 +17,5 @@ function! pycompletefunc#CompleteFunc
       endif
     endfor
     return res
+  endif
 endfunction
