@@ -1,4 +1,8 @@
 function! pycompletefunc#CompleteFunc(findstart, base)
+  let path = fnamemodify(resolve(expand('<sfile>:p')), ':h') . '/python/pycompletefunc.py'
+
+  execute 'py3file ' . path
+
   if a:findstart
     " locate the start of the word
     let line = getline('.')
