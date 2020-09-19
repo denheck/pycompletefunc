@@ -1,3 +1,6 @@
 [submodule "python/jedi"]
 	path = python/jedi
 	url = https://github.com/davidhalter/jedi
+[submodule "python/parso"]
+	path = python/parso
+	url = https://github.com/davidhalter/parso
