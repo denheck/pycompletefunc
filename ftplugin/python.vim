@@ -1,0 +1,1 @@
+setlocal completefunc=pycompletefunc#CompleteFunc
