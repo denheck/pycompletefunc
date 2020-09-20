@@ -1,12 +1,7 @@
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-
-
-<br />
 <p align="center">
   <h3 align="center">Pycompletefunc</h3>
 
-  <p align="center">A small plugin focused on Python completion</p>
+  <p align="center">A minimal plugin focused on Python completion</p>
 </p>
 
 
@@ -89,8 +84,6 @@ Thanks to the following exemplary projects for inspiration. If this plugin doesn
 * [coc.nvim](https://github.com/neoclide/coc.nvim)
 
 
-[issues-shield]: https://img.shields.io/github/issues/github_username/repo.svg?style=flat-square
-[issues-url]: https://github.com/github_username/repo/issues
 [license-shield]: https://img.shields.io/github/license/github_username/repo.svg?style=flat-square
 [license-url]: https://github.com/github_username/repo/blob/master/LICENSE.txt
 [product-screenshot]: images/screenshot.png
