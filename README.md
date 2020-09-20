@@ -36,7 +36,7 @@
   <h3 align="center">Pycompletefunc</h3>
 
   <p align="center">
-    YOUR_SHORT_DESCRIPTION
+    A Python code completion function for use with VIM's builtin autocomplete
     <br />
     <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
     <br />
