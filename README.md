@@ -1,32 +1,7 @@
-<!--
-*** Thanks for checking out this README Template. If you have a suggestion that would
-*** make this better, please fork the repo and create a pull request or simply open
-*** an issue with the tag "enhancement".
-*** Thanks again! Now go create something AMAZING! :D
-***
-***
-***
-*** To avoid retyping too much info. Do a search and replace for the following:
-*** github_username, repo_name, twitter_handle, email
--->
-
-
-
-
-
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 
 
-<!-- PROJECT LOGO -->
 <br />
 <p align="center">
   <a href="https://github.com/denheck/pycompletefunc">
@@ -50,8 +25,6 @@
 </p>
 
 
-
-<!-- TABLE OF CONTENTS -->
 ## Table of Contents
 
 * [About the Project](#about-the-project)
@@ -67,77 +40,47 @@
 * [Acknowledgements](#acknowledgements)
 
 
-
-<!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[Product Name Screen Shot][product-screenshot]
 
 This is a lightweight and fast VIM plugin to handle Python code completion. It provides one function named `pycompletefunc#CompleteFunc` and uses it to set the `completefunc` VIM option for Python files.
 
 Plugin goals
-* Stay focused: Provide a Python completion function to override `completefunc` exclusively. 
-* Stay fast: Speed is important and typing should never be blocked until completion options arrive.
-* Defer to VIM: VIM already has keybindings `Ctrl-X Ctrl-U` and a popup for displaying completion options. This plugin should work with those existing features and won't create new keybindings or custom popups.
-
-
-
-Here's a blank template to get started:
-**To avoid retyping too much info. Do a search and replace with your text editor for the following:**
-`github_username`, `repo_name`, `twitter_handle`, `email`
+* *Stay focused:* Provide a Python completion function to override `completefunc` exclusively. 
+* *Stay fast:* Speed is important and typing should never be blocked until completion options arrive.
+* *Defer to VIM:* VIM already has keybindings `Ctrl-X Ctrl-U` with a popup for displaying completion options. This plugin should work with those existing features and won't create new keybindings or custom popups.
+* *Manage dependencies:* Install and manage completion dependencies like Jedi for plugin users
 
 
 ### Built With
 
-* []()
-* []()
-* []()
+* [jedi](https://github.com/davidhalter/jedi)
 
 
-
-<!-- GETTING STARTED -->
 ## Getting Started
 
 To get a local copy up and running follow these simple steps.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-```sh
-npm install npm@latest -g
-```
+Make sure VIM is installed with the python 3 extension. You can verify this by running `vim --version` at a bash prompt and looking for `+python3` in the output. 
 
 ### Installation
 
-1. Clone the repo
-```sh
-git clone https://github.com/github_username/repo_name.git
+You can install this package using a VIM package manager like [vim-plug](https://github.com/junegunn/vim-plug) or using VIM 8's native package loading
+
+Example .vimrc update to install using vim-plug:
 ```
-2. Install NPM packages
-```sh
-npm install
+Plug 'denheck/pycompletefunc'
 ```
 
 
-
-<!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
+Once installed the builtin VIM command for executing a user defined completion (`CTRL-X CTRL-U`) will open the options dropdown.  Options can be cycled through using `CTRL-N` and `CTRL-P`. For more information on user defined completion in VIM the documentation has you covered. See `:help ins-completion` or `:help compl-function`
 
 
-
-<!-- ROADMAP -->
-## Roadmap
-
-See the [open issues](https://github.com/github_username/repo_name/issues) for a list of proposed features (and known issues).
-
-
-
-<!-- CONTRIBUTING -->
 ## Contributing
 
 Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
@@ -149,36 +92,20 @@ Contributions are what make the open source community such an amazing place to b
 5. Open a Pull Request
 
 
-
-<!-- LICENSE -->
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
 
-
-<!-- CONTACT -->
-## Contact
-
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email
-
-Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
-
-
-
-<!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
 
-* []()
-* []()
-* []()
+Thanks to the following exemplary projects for inspiration. If this plugin doesn't suit your needs you should definitely use one of the following 
+
+* [jedi-vim](https://github.com/davidhalter/jedi-vim)
+* [completor.vim](https://github.com/maralla/completor.vim)
+* [coc.nvim](https://github.com/neoclide/coc.nvim)
 
 
-
-
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-shield]: https://img.shields.io/github/contributors/github_username/repo.svg?style=flat-square
 [contributors-url]: https://github.com/github_username/repo/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/github_username/repo.svg?style=flat-square
