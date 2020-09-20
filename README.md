@@ -25,10 +25,10 @@
 This is a lightweight and fast VIM plugin to handle Python code completion. It provides one function named `pycompletefunc#CompleteFunc` and uses it to set the `completefunc` VIM option for Python files.
 
 Plugin goals
-* *Stay focused:* Provide a Python completion function to override `completefunc` exclusively. 
-* *Stay fast:* Speed is important and typing should never be blocked until completion options arrive.
-* *Defer to VIM:* VIM already has keybindings `Ctrl-X Ctrl-U` with a popup for displaying completion options. This plugin should work with those existing features and won't create new keybindings or custom popups.
-* *Manage dependencies:* Install and manage completion dependencies like Jedi for plugin users
+* _Stay focused:_ Provide a Python completion function to override `completefunc` exclusively. 
+* _Stay fast:_ Speed is important and typing should never be blocked until completion options arrive.
+* _Defer to VIM:_ VIM already has keybindings `Ctrl-X Ctrl-U` with a popup for displaying completion options. This plugin should work with those existing features and won't create new keybindings or custom popups.
+* _Manage dependencies:_ Install and manage completion dependencies like Jedi for plugin users
 
 
 ### Built With
